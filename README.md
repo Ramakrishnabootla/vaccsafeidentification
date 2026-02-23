@@ -168,7 +168,7 @@ Avg Noise (Off-Diag):  0.007
 Max Noise (Worst Case): 0.491
 Separation Ratio:      101.68
 Safety Margin:         0.182
--------------------------
+-------------------------   
 np.float64(101.68228560033238)
 
 ```
