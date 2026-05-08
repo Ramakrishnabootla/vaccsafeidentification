@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 import pandas as pd
 import os
-from augment_image import augment_image
+from NosePrintes_Detection.augment_image import augment_image
 
 DATASET_PATH = "D:/1csm/Interns/Hexart/Nose Prints"
 
