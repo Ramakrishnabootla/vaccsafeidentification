@@ -1,1 +1,39 @@
+---
 
+## Installation
+
+```cmd
+pip install -r requirements.txt
+```
+
+On first run, YOLOv8 model weights (`yolov8s-seg.pt`) are downloaded automatically. An internet connection is required for the first run only.
+
+---
+
+## Usage
+
+### Run full pipeline
+```cmd
+python pipeline.py --video input_video.mp4
+```
+
+### Test individual stages
+```cmd
+# Test YOLO detection on a single image
+python stage1_detection.py --input frame_25.jpg
+
+# Test feature extraction on a single image
+python stage3_features.py --input frame_25.jpg
+
+# Test database query with manual input
+python stage4_db_query.py --color brown --w1 210 --h1 180 --h2 90
+
+# Test task manager with a dummy new dog
+python stage5_task_manager.py --dog_id TEST-001 --color brown --w1 200 --h1 170 --h2 85
+```
+
+---
+
+## Output
+
+### Console output (per unique dog detected)
